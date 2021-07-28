@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package="/pb";
+
+message JsonRequest {
+    bytes Params = 1;
+}
+
+message JsonResponse {
+    bytes Result = 1;
+}

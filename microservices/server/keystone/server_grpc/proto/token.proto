@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package="/proto";
+
+import "cctable/common/libs/micro/pb/grpc_payload.proto";
+
+service TokenService {
+    rpc CheckAccessToken(JsonRequest) returns (JsonResponse) {}
+}
